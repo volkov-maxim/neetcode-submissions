@@ -5,4 +5,3 @@ class Solution:
             return False
         else:
             return Counter(s) == Counter(t)
-            
