@@ -1,7 +1,7 @@
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
         while len(stones) > 1:
-            stones = sorted(stones)
+            stones.sort() # in-place op O(1).
             st1, st2 = stones.pop(), stones.pop()
             if st1 != st2:
                 stones.append(st1 - st2)
